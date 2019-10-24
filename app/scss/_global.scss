@@ -1,3 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
@@ -17,9 +26,12 @@ li{
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
-
-.suptitle-left{
+.headline-left{
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
@@ -61,6 +73,19 @@ li{
             width: 80px;
             height: 1px;
             background-color: $green;
+        }
+    }
+}
+
+.subtitle{
+    display: inline-block;
+    text-align: right;
+    &__head{
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 10px;
+        span{
+            font-weight: 100;
         }
     }
 }
