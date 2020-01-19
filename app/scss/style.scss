@@ -416,8 +416,11 @@
         }
     }
 }
-.travel{
+.holder{
     background-image: url(../img/travel-bg.png);
+    &.sleep{
+        background-image: url(../img/frangipani.png);
+    }
     background-position: bottom right;
     background-repeat: no-repeat;
     .slider-arrows{
@@ -425,7 +428,7 @@
         opacity: 0.5;
     }
 }
-.travel-slider{
+.holder-slider{
     &__head{
         background-repeat: no-repeat;
         background-position: top left;
@@ -439,16 +442,32 @@
         margin-top: -230px;
         background-repeat: no-repeat;
         background-position: right center;
+        background-size: contain;
         .descr{
             padding-bottom: 50px;
         }
         .descr__head{
             position: relative;
-            padding-right: 78px;
+            padding-right: 68px;
+            &.descr__head-sleep{
+                padding-right: 215px;
+            }
             img{
                 position: absolute;
                 right: 0;
                 top: 0;
+            }
+            .holder__star-list{
+                position: absolute;
+                right: -160px;
+                top: 0;
+                li{
+                    display: inline-block;
+                    margin-left: -25px;
+                }
+                img{
+                    position: static;
+                }
             }
         }
     }
@@ -460,16 +479,16 @@
         text-align: center;
     }
 }
-.travel-slider__info{
+.holder-slider__info{
     display: flex;
     justify-content: space-around;
 }
-.travel-slider__info-item{
+.holder-slider__info-item{
     position: relative;
     min-height: 200px;
     margin-bottom: 66px;
 }
-.travel-slider__info-subtitle{
+.holder-slider__info-subtitle{
     position: absolute;
     font-size: 18px;
     line-height: 22px;
@@ -483,13 +502,13 @@
     white-space: nowrap;
     text-align: right;
 }
-.travel-slider__info-title{
+.holder-slider__info-title{
     font-size: 40px;
     line-height: 36px;
     font-weight: 800;
     padding-left: 40px;
     position: relative;
-    span{
+    .holder-pricing__span{
         font-size: 14px;
         font-weight: 400;
         text-align: right;
@@ -501,6 +520,28 @@
         right: 0;
     }
 }
+.shop{
+    background-image: url(../img/shop-bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+
+}
+.shop__slider{
+    padding-left: 132px;
+}
+.shop__slider-info{
+    margin-right: 40px;
+    min-width: 480px;
+    width: 100%;
+}
+.shop__slider-inner{
+    display: flex;
+}
+.descr__head-shop{
+    width: 340px;
+    margin-bottom: 47px;
+}
+
 
 
 
