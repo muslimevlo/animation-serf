@@ -220,8 +220,8 @@ input[type=number]
   
 }
 
-&.star-list{
-    margin-left: 20px;
+.star-list{
+    // margin-left: 20px;
     li{
         display: inline-block;
         & + li{
